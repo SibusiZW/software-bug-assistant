@@ -1,6 +1,4 @@
 from google.adk.agents.llm_agent import Agent
-from tools import list_directory
-
 MODEL = 'gemini-2.5-flash'
 
 root_agent = Agent(
@@ -9,5 +7,3 @@ root_agent = Agent(
     description='A helpful assistant for user questions.',
     instruction='Answer user questions to the best of your knowledge',
 )
-
-print(list_directory(r"C:\Users\GNX\Desktop"))
