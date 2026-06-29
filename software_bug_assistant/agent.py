@@ -1,5 +1,5 @@
 from google.adk.agents.llm_agent import Agent
-from tools import read_text
+from tools import list_directory
 
 MODEL = 'gemini-2.5-flash'
 
@@ -10,4 +10,4 @@ root_agent = Agent(
     instruction='Answer user questions to the best of your knowledge',
 )
 
-print(read_text(r"C:\Users\GNX\Desktop\test.txt"))
+print(list_directory(r"C:\Users\GNX\Desktop"))
