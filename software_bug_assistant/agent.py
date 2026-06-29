@@ -1,4 +1,5 @@
 from google.adk.agents.llm_agent import Agent
+
 MODEL = 'gemini-2.5-flash'
 
 root_agent = Agent(
