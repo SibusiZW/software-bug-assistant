@@ -17,9 +17,11 @@ def list_directory(directory: str) -> list:
     try:
         resolved_path = Path(directory).resolve()
 
-        return [str(file.name) for file in resolved_path.iterdir()]
-
         if not resolved_path.exists():
             return ["File not found"]
+
+        return [str(file.name) for file in resolved_path.iterdir()]
+
+        
     except Exception as e:
         return [str(e)]
