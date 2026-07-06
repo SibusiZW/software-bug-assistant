@@ -1,6 +1,7 @@
 from google.adk.agents.llm_agent import LlmAgent
 from google.adk.tools import google_search, AgentTool
-from google.adk.tools.mcp_tool import McpToolset, StreamableHTTPConnectionParams
+from google.adk.tools.mcp_tool.mcp_toolset import McpToolset
+from google.adk.tools.mcp_tool.mcp_session_manager import StreamableHTTPConnectionParams
 import os
 
 search_agent = LlmAgent(
