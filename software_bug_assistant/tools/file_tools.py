@@ -24,8 +24,6 @@ def write_text(path: str, content: str) -> dict:
         if not str(resolved_path).startswith(str(BASE_DIR)):
             return {'error': "Access denied"}
 
-        resolved_path.parent.mkdir(parents=True)
-        
         resolved_path.write_text(encoding='utf-8', data=content)
         return {
             "msg": 'Success',
